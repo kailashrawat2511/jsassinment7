@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+         // Question1
+         let marks = parseInt(prompt("Enter marks of student"));
+        function findGrade() {
+            switch (true) {
+                case (marks >= 0 && marks <= 10):
+                    console.log("grade E");
+                    break;
+
+                case (marks >= 11 && marks <= 20):
+                    console.log("grade D");
+                    break;
+
+                case (marks >= 21 && marks <= 30):
+                    console.log("grade C");
+                    break;
+
+                case (marks >= 31 && marks <= 40):
+                    console.log("grade B");
+                    break;
+
+                case (marks >= 41 && marks <= 50):
+                    console.log("grade A");
+                    break;
+
+                default:
+                    console.log("Fail");
+            }
+        }
+
+        findGrade();
+
+
+
+        // Question2
+        let value = prompt("enter a alphabet");
+        function getValue() {
+            if (value === "P" || value === "p") {
+                console.log("PrepBytes");
+            }
+            else if (value === "Z" || value === "z") {
+                console.log("Zenith");
+            }
+            else if (value === "E" || value === "e") {
+                console.log("Expert Coder");
+            }
+            else if (value === "D" || value === "d") {
+                console.log("Data Structure");
+            }
+            else {
+                console.log("Invalied");
+            }
+        }
+        getValue();
+
+
+
+        // Question3
+        let a = parseInt(prompt("Enter first number"));
+        let b = parseInt(prompt("Enter second number"));
+        let c = parseInt(prompt("Enter third number"));
+
+        function Max_out_of_three() {
+            if (a > b && a > c) {
+                console.log(`First number ${a} is greater`);
+            }
+            else if (b > a && b > c) {
+                console.log(`Second number ${b} is greater`);
+            }
+            else {
+                console.log(`Third number ${c} is greater`);
+            }
+        }
+        Max_out_of_three();
+
+
+        // Question4
+        let x = parseInt(prompt("Enter first number"));
+        let y = parseInt(prompt("Enter second number"));
+        let z = parseInt(prompt("Enter third number"));
+
+        function findSndSmallest() {
+            if ((x > y && x < z) || (x < y && x > z)) {
+                console.log(`First number ${a} is second smallest`);
+            }
+            else if ((y > x && y < z) || (y < x && y > z)) {
+                console.log(`Second number ${b} is second smallest`);
+            }
+            else {
+                console.log(`Third number ${z} is second smallest`);
+            }
+        }
+        findSndSmallest();
+
+
+        // Question5
+        let A = parseInt(prompt("Enter first angles"));
+        let B = parseInt(prompt("Enter second angles"));
+        let C = parseInt(prompt("Enter third angles"));
+
+        function Triangle_Check() {
+            if ((A >= 0 && A <= 90) && (B >= 0 && B <= 90) && (C >= 0 && C <= 90)) {
+                console.log(`The Trangle is acute`);
+            }
+            else {
+                console.log(`The trange is obtuse`)
+            }
+        }
+        Triangle_Check();
+
+    </script>
+</body>
+</html>
